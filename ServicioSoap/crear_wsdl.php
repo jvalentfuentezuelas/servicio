@@ -2,7 +2,7 @@
 require_once './vendor/autoload.php';
 include 'HolaServicio.php';
 $class = "HolaServicio";
-$serviceURI = "http://localhost/SOAPPHP/ServicioSoap/";
+$serviceURI = "http://localhost/servicio/ServicioSoap/";
 $wsdlGenerator = new \PHP2WSDL\PHPClass2WSDL($class, $serviceURI);
 // Generate the WSDL from the class adding only the public methods that have @soap annotation.
 $wsdlGenerator->generateWSDL(true);

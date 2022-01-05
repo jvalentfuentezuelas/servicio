@@ -1,7 +1,7 @@
 <?php
-$client = new SoapClient('http://localhost/SOAPPHP/ServicioSoap/saludo.wsdl',array(
-      'location' => "http://localhost/SOAPPHP/ServicioSoap/soap_server.php",
-      'uri'      => "http://localhost/SOAPPHP/ServicioSoap/",
+$client = new SoapClient('http://localhost/servicio/ServicioSoap/saludo.wsdl',array(
+      'location' => "http://localhost/servicio/ServicioSoap/soap_server.php",
+      'uri'      => "http://localhost/servicio/ServicioSoap/",
       'trace'    => 1
        ));
 try {
