@@ -6,6 +6,10 @@ $client = new SoapClient('http://localhost/servicio/ServicioSoap/saludo.wsdl',ar
        ));
 try {
 	echo $return = $client->__soapCall("suma", ["a"=> 5,"b"=> 4 ] );
+      echo "<br>";
+      echo $return = $client->__soapCall("adios", ["name"=> "Manolo" ] );
+      echo "<br>";
+      echo $return = $client->__soapCall("hola", ["name"=>"Manolo" ] );
 } catch ( SOAPFault $e ) {
 	echo $e->getMessage().PHP_EOL;
 }
