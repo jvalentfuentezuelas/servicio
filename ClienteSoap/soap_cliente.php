@@ -9,7 +9,7 @@ try {
       echo "<br>";
       echo $return = $client->__soapCall("adios", ["name"=> "Manolo" ] );
       echo "<br>";
-      echo $return = $client->__soapCall("hola", ["name"=>"Manolo" ] );
+      echo $return = $client->__soapCall("saludo", ["name"=>"Manolo" ] );
 } catch ( SOAPFault $e ) {
 	echo $e->getMessage().PHP_EOL;
 }
