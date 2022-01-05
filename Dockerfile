@@ -5,3 +5,4 @@ RUN docker-php-ext-install soap
 COPY php.ini /usr/local/etc/php/php.ini
 WORKDIR /var/www/html
 RUN git clone https://github.com/jvalentfuentezuelas/servicio.git
+RUN cd servicio/ServicioSoap  && php crear_wsdl.php
